@@ -6,22 +6,26 @@ html
     title Seedux
 
   body
-    .container-fluid.no-padding
-      nav.navbar.navbar-light.no-radius
-        a.navbar-brand(href="#") Seedux
-        ul.nav.navbar-nav
-          li.nav-item.active
-            a.nav-link.data-scroll#scroll(href="#") Home
-          li.nav-item
-            a.nav-link.data-scroll#scroll(href="#") Docs
-          li.nav-item
-            a.nav-link.data-scroll#scroll(href="#") Blog
-          li.nav-item
-            a.nav-link.data-scroll#scroll(href="#") Discuss
-    .container
-      .row
-        .col-xs-12.col
-          h1.text-center This is Seedux!
+    div.container
+      div.header.clearfix
+        nav
+          ul.nav.nav-pills.float-xs-right
+            li.nav-item
+              a.nav-link(href="#") Home
+              span.sr-only(current)
+            li.nav-item
+              a.nav-link(href="#") NPM
+            li.nav-item
+              a.nav-link(href="https://github.com/reduxify/seedux") Github Repo
+          h3.text-muted.page-header Seedux
+      div.jumbotron
+        img(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1gCPetpZBT7xMxosYE7XDcA09jQr8wJ18G2ryi7rrbHULyXB5gw")
+        p.lead React-redux dev tool for the Chrome Browser
+      div.row.marketing
 
-    include layout/footer.jade
+
+
+
+
+
 

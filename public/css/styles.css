@@ -2,7 +2,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     display: block;
-    color: ;
+    color: purple;
 }
 
 h3 {
@@ -96,4 +96,12 @@ li {
     padding-top: 1.5rem;
     color: #777;
     border-top: .05rem solid purple
+}
+
+.purple {
+	color: purple;
+}
+
+.notpurple {
+	color: black;
 }

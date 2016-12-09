@@ -1,0 +1,107 @@
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    color: purple;
+}
+
+h3 {
+	display: block;
+}
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+.page-header {
+	color: purple;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #e5e5e5;
+}
+
+.float-xs-right {
+    float: right!important;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-pills .nav-item {
+    float: left;
+}
+
+.nav-pills .nav-item+.nav-item {
+    margin-left: .2rem;
+}
+
+.nav-pills .nav-link {
+    display: block;
+    padding: .5em 1em;
+    border-radius: .25rem;
+    color: purple;
+}
+
+
+li {
+    display: list-item;
+}
+
+.nodot{
+	list-style-type: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.jumbotron{
+	text-align: center;
+	margin-bottom: 2rem;
+	border-radius: .4rem;
+}
+
+.marketing {
+    margin: 3rem 0;
+}
+
+.footer {
+    padding-top: 1.5rem;
+    color: #777;
+    border-top: .05rem solid purple
+}
+
+.purple {
+	color: purple;
+}
+
+.notpurple {
+	color: black;
+}

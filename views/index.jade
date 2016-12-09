@@ -14,7 +14,7 @@ html
               a.nav-link(href="#") Home
               span.sr-only(current)
             li.nav-item
-              a.nav-link(href="#") NPM
+              a.nav-link(href="https://www.npmjs.com/package/seedux") NPM
             li.nav-item
               a.nav-link(href="https://github.com/reduxify/seedux") Github Repo
           h3.text-muted.page-header Seedux
@@ -22,6 +22,23 @@ html
         img(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1gCPetpZBT7xMxosYE7XDcA09jQr8wJ18G2ryi7rrbHULyXB5gw")
         p.lead React-redux dev tool for the Chrome Browser
       div.row.marketing
+        div.col-lg-6#accordion(role="tablist", aria-multiselectable="true")
+          div.card.card-header(role="tab")#headingOne
+          h5.mb-0
+            a(data-toggle="collapse", data-parent="#accordian", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne") Features
+            div#collapseOne.collapse.in(role="tabpanel", aria-labelledby="headingOne")
+              div.card-block
+                ul
+                  li travel functionality for your Redux store
+                  li Persistent log of every action dispatched, resulting store diffs, and complete new store
+                  li Persistent log of every action dispatched, resulting store diffs, and complete new store
+                  li Configurable visualization of actionCreators, reducers, and ui props if using react-redux
+                  li Illumination of relevant actionsCreators and reducers upon action dispatch
+                  li Settings menu to customize view
+                  li Ability to dispatch actions with custom payloads
+                  li Import/Export and Stash/Unstash complete store logs from disk or localStorage, respectively
+
+
 
 
 

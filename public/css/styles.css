@@ -2,6 +2,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     display: block;
+    color: ;
 }
 
 h3 {
@@ -26,10 +27,9 @@ h3 {
     padding-right: 15px;
 }
 
-/*the header : Seedux name && Home, NPM, Github, Issue buttons*/
 .header {
     padding-bottom: 1rem;
-    border-bottom: .05rem solid blue;
+    border-bottom: .05rem solid #e5e5e5;
 }
 
 .float-xs-right {
@@ -59,7 +59,9 @@ ul {
     display: block;
     padding: .5em 1em;
     border-radius: .25rem;
+    color: purple;
 }
+
 
 li {
     display: list-item;

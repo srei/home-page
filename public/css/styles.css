@@ -1,12 +1,14 @@
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-    color: purple;
+a {
+    color: #4B0082;
+    text-decoration: none;
 }
 
 h3 {
 	display: block;
+}
+
+.justPurple{
+    color: #4B0082;
 }
 
 .header h3 {
@@ -16,10 +18,6 @@ h3 {
     font-weight: 500;
 }
 
-.page-header {
-	color: purple;
-}
-
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -27,10 +25,16 @@ h3 {
     padding-right: 15px;
 }
 
+.seeduxLogo {
+    color: #4B0082;
+    font-size: 40px;
+    ;
+}
 .header {
     padding-bottom: 1rem;
     border-bottom: .05rem solid #e5e5e5;
 }
+
 
 .float-xs-right {
     float: right!important;
@@ -40,7 +44,16 @@ ul {
     margin-top: 0;
     margin-bottom: 1rem;
     display: block;
+    list-style-type: none;
 }
+
+ul.special {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    list-style-type: square;
+}
+
 .nav {
     padding-left: 0;
     margin-bottom: 0;
@@ -59,7 +72,7 @@ ul {
     display: block;
     padding: .5em 1em;
     border-radius: .25rem;
-    color: purple;
+    color: #4B0082;
 }
 
 
@@ -83,9 +96,10 @@ li {
 }
 
 .jumbotron{
-	text-align: center;
-	margin-bottom: 2rem;
-	border-radius: .4rem;
+text-align: center;
+margin-bottom: 2rem;
+border-radius: .4rem;
+box-shadow: 0 0px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .marketing {
@@ -95,13 +109,42 @@ li {
 .footer {
     padding-top: 1.5rem;
     color: #777;
-    border-top: .05rem solid purple
+    border-top: .05rem solid #c4c4c4
 }
 
-.purple {
-	color: purple;
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.purpleText {
+	color: #4B0082;
+    font-size: 40px;
+    text-align: center;
 }
 
 .notpurple {
-	color: black;
+	color: #333333;
+    font-size: 20px;
+}
+
+.textSize {
+    font-size: 20px;
+}
+
+.innerTextSize{
+    font-size: 17px;
+}
+
+.innerTextSize2{
+    font-size: 16px;
+}
+
+pre {
+    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lightpurple {
+    color: #b19cd9;
 }

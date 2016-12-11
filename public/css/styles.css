@@ -1,15 +1,42 @@
-a {
-    color: #4B0082;
-    text-decoration: none;
+.nav-pills .nav-item {
+    float: left;
+    margin-left: .2rem;
 }
 
-h3 {
-	display: block;
+.jumbotron{
+text-align: center;
+box-shadow: 2px 2px 2px 2px #888888;
 }
 
-.justPurple{
+#seeduxLogo {
+    color: #4B0082;
+    font-size: 40px;
+}
+
+.justPurple {
     color: #4B0082;
 }
+
+.purpleText {
+    font-size: 40px;
+    text-align: center;
+}
+
+#feature {
+    font-size: 35px;
+    text-align: center;
+}
+
+#featureDiv ul {
+  font-size: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+p {
+
+}
+
 
 .header h3 {
     margin-top: 0;
@@ -25,11 +52,7 @@ h3 {
     padding-right: 15px;
 }
 
-.seeduxLogo {
-    color: #4B0082;
-    font-size: 40px;
-    ;
-}
+
 .header {
     padding-bottom: 1rem;
     border-bottom: .05rem solid #e5e5e5;
@@ -44,36 +67,17 @@ ul {
     margin-top: 0;
     margin-bottom: 1rem;
     display: block;
-    list-style-type: none;
+    /*list-style-type: none;*/
 }
 
 ul.special {
     margin-top: 0;
     margin-bottom: 1rem;
     display: block;
-    list-style-type: square;
+    /*list-style-type: square;*/
 }
 
-.nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
 
-.nav-pills .nav-item {
-    float: left;
-}
-
-.nav-pills .nav-item+.nav-item {
-    margin-left: .2rem;
-}
-
-.nav-pills .nav-link {
-    display: block;
-    padding: .5em 1em;
-    border-radius: .25rem;
-    color: #4B0082;
-}
 
 
 li {
@@ -95,12 +99,7 @@ li {
     border: 0;
 }
 
-.jumbotron{
-text-align: center;
-margin-bottom: 2rem;
-border-radius: .4rem;
-box-shadow: 0 0px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
+
 
 .marketing {
     margin: 3rem 0;
@@ -116,12 +115,6 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     display: block;
-}
-
-.purpleText {
-	color: #4B0082;
-    font-size: 40px;
-    text-align: center;
 }
 
 .notpurple {
@@ -145,6 +138,4 @@ pre {
     box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.lightpurple {
-    color: #b19cd9;
-}
+

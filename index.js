@@ -6,6 +6,8 @@ let express = require('express'),
 let fetch = require('node-fetch');
 fetch.promise = require('bluebird');
 
+let marked = require('marked');
+
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public'));
@@ -18,29 +20,34 @@ app.get('/', (req, res, next) => {
 fetch('https://raw.githubusercontent.com/reduxify/seedux/master/README.md')
     .then(response => response.text())
     .then(text => {
-      let splitString = text.split('# Features');
-      splitString = splitString[1].split('# Instructions');
-      const featuresContent = splitString[0];
-      splitString = splitString[1].split('## Getting Started:');
-      const installContent = splitString[0];
-      const gettingStartedContent = splitString[1].split('## Complete Example Integration')[0];
+    	//features
+      let entireString = text.split('# Features');
+
+      entireString = entireString[1].split('# How to Install');
+      const featuresContent = entireString[0];
+
+      entireString = entireString[1].split('## Getting Started:');
+
+      const installContent = entireString[0];
+
+      const gettingStartedContent = entireString[1].split('## Complete Example Integration')[0];
+
       return readme = [
         {
           sectionTitle: 'Features',
-          sectionContent: featuresContent,
+          sectionContent: marked(featuresContent),
         },
         {
           sectionTitle: 'Install',
-          sectionContent: installContent,
+          sectionContent: marked(installContent),
         },
         {
           sectionTitle: 'Getting Started',
-          sectionContent: gettingStartedContent,
-        },
+          sectionContent: marked(gettingStartedContent),
+        }
       ];
     })
     .then(readme => {
-    	console.log({readme});
     	res.render('index', {readme});
     })
     .catch(err => console.log(err));

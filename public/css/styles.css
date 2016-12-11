@@ -3,6 +3,12 @@
     margin-left: .2rem;
 }
 
+
+.float-xs-right {
+    float: right!important;
+}
+
+
 .jumbotron{
 text-align: center;
 box-shadow: 2px 2px 2px 2px #888888;
@@ -17,6 +23,20 @@ box-shadow: 2px 2px 2px 2px #888888;
     color: #4B0082;
 }
 
+#npm-module-recommended-{
+     color: #4B0082;
+     font-size: 18.5px;
+}
+
+#developer-version{
+    color: #4B0082;
+    font-size: 18.5px;
+}
+
+p {
+    font-size: 15px;
+}
+
 .purpleText {
     font-size: 40px;
     text-align: center;
@@ -28,21 +48,9 @@ box-shadow: 2px 2px 2px 2px #888888;
 }
 
 #featureDiv ul {
-  font-size: 20px;
+  font-size: 15px;
   list-style-type: none;
   text-align: center;
-}
-
-p {
-
-}
-
-
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 3rem;
-    font-weight: 500;
 }
 
 .container {
@@ -59,81 +67,19 @@ p {
 }
 
 
-.float-xs-right {
-    float: right!important;
-}
-
-ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-    /*list-style-type: none;*/
-}
-
-ul.special {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-    /*list-style-type: square;*/
-}
-
-
-
-
-li {
-    display: list-item;
-}
-
-.nodot{
-	list-style-type: none;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-}
-
-
-
 .marketing {
     margin: 3rem 0;
 }
 
 .footer {
     padding-top: 1.5rem;
+    padding-left: 15px;
     color: #777;
     border-top: .05rem solid #c4c4c4
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-}
 
-.notpurple {
-	color: #333333;
-    font-size: 20px;
-}
-
-.textSize {
-    font-size: 20px;
-}
-
-.innerTextSize{
-    font-size: 17px;
-}
-
-.innerTextSize2{
-    font-size: 16px;
-}
-
+/*Material design for code blocks*/
 pre {
     box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }

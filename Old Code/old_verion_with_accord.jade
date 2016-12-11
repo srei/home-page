@@ -1,0 +1,80 @@
+doctype html
+html
+  include layout/includes.jade
+
+  head
+    title Seedux
+
+  body
+    div.container
+      div.header.clearfix
+        nav
+          ul.nav.nav-pills.float-xs-right
+            li.nav-item
+              a.nav-link(href="https://www.npmjs.com/package/seedux", target="_blank") NPM
+            li.nav-item
+              a.nav-link(href="https://github.com/reduxify/seedux", target="_blank") Github Repo
+            li.nav-item
+              a.nav-link(href="https://github.com/reduxify/seedux/issues", target="_blank") Issue Page
+          h3.page-header Seedux
+      div.jumbotron
+        img(src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1gCPetpZBT7xMxosYE7XDcA09jQr8wJ18G2ryi7rrbHULyXB5gw")
+        p React-redux dev tool for the Chrome Browser
+      div.row.marketing
+           div.purpleText Features
+            ul.notpurple
+              li.notpurple Time-travel functionality for your Redux store
+              li.notpurple Persistent log of every action dispatched, resulting store diffs, and complete new store
+              li.notpurple Configurable visualization of actionCreators, reducers, and ui props if using react-redux
+              li.notpurple Illumination of relevant actionsCreators and reducers upon action dispatch
+              li.notpurple Settings menu to customize view
+              li.notpurple Ability to dispatch actions with custom payloads
+              li.notpurple Import/Export and Stash/Unstash complete store logs from disk or localStorage, respectively
+        div.row.marketing
+        div.col-lg-6
+          div#accordion(role="tablist", aria-multiselectable="true")
+          div.card
+          div.card-header(role="tab")#headingOne
+          h3.mb-0
+              a(data-toggle="collapse", data-parent="#accordian", href="#collapseOne", aria-expanded="false", aria-controls="collapseOne") How to Install
+            div#collapseOne.collapse(role="tabpanel", aria-labelledby="headingOne")
+              div.card-block.textSize  NPM Module (recommended)
+              br
+              div.innerTextSize Seedux can be easily installed as a developer dependency with npm using your favorite terminal.
+              br
+              pre(code) npm install seedux --save-dev
+              div.innerTextSize Developer Version: Fork and Clone (developer version) To use Seedux development version, fork and clone our Git repository to an easily accessible file path on your computer and run the build
+              pre(code) seedux_repo_path
+              pre(code) run build:both
+        div.col-lg-6
+          div.card
+            div.card-header(role="tab")#headingTwo
+            h3.mb-0
+              a.collapsed(data-toggle="collapse", data-parent="#accordian", href="#collapseTwo", aria-expanded="false", aria-controls="collapseTwo") Getting Started
+            div#collapseTwo.collapse(role="tabpanel", aria-labelledby="headingTwo")
+              div.card-block
+              ul
+                li.innerTextSize import createStore, combineReducers, bindActionCreators, and connect from Seedux, rather than Redux.
+                pre(code) // import { combineReducers } from 'redux';
+                pre(code) import { combineReducers } from 'seedux';
+                li.innerTextSize import dispatchLogger from Seedux and apply it as middleware when invoking createStore.
+                br
+                li.innerTextSize import and call seeduxInit, and pass it your newly created store.
+                pre(code) import { createStore, dispatchLogger } from 'seedux';
+                pre(code) const store = createStore(combinedReducer, preloadedState, applyMiddleware(dispatchLogger));
+                pre(code) seeduxInit(store);
+                li.innerTextSize Last Bit:
+                br
+                li.nodot.innerTextSize Navigate to chrome://extensions
+                br
+                li.nodot.innerTextSize Click 'load as an unpacked extension' & select seedux_repo_path + 'seedux/seeduxChrome'
+                br
+                li.nodot.innerTextSize Open your project using localhost and your port of choice in the Chrome browser.
+                br
+                li.nodot.innerTextSize Click on the seeduxChrome extension icon (it's a duck!) in your toolbar
+      footer.footer
+          p Authors
+          a(href="https://github.com/mlampedx", target="_blank") Michael Lampe
+          a(href="https://github.com/bartlett705", target="_blank") Ahmad Kanawi
+          a(href="https://github.com/srei", target="_blank") Stephenie Reimer
+

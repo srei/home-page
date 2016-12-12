@@ -59,6 +59,6 @@ app.get('/duck', (req,res, next) => {
 
 const PORT = 3000;
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
 	console.log(`listening on port ${PORT}`);
 });

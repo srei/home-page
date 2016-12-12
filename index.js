@@ -2,7 +2,6 @@ let express = require('express'),
 		app = express(),
 		bodyParser = require('body-parser');
 
-//get marked, run marked on the strings in readme array//w/ what marked returns
 let fetch = require('node-fetch');
 fetch.promise = require('bluebird');
 
@@ -20,7 +19,8 @@ app.get('/', (req, res, next) => {
 fetch('https://raw.githubusercontent.com/reduxify/seedux/master/README.md')
     .then(response => response.text())
     .then(text => {
-    	//features
+      // console.log(text, "this is the test response".repeat(80));
+
       let entireString = text.split('# Features');
 
       entireString = entireString[1].split('# How to Install');

@@ -1,87 +1,123 @@
-.nav-pills .nav-item {
-    float: left;
-    margin-left: .2rem;
-}
-
-
-.float-xs-right {
-    float: right!important;
-}
-
-
-.jumbotron{
-text-align: center;
-box-shadow: 2px 2px 2px 2px #888888;
-}
-
-#seeduxLogo {
+div.row h3 {
     color: #4B0082;
-    font-size: 40px;
+    font-size: 20px;
 }
 
-.justPurple {
-    color: #4B0082;
+div.row.marking {
+    padding: 5%;
+    margin: 2%;
 }
 
-#npm-module-recommended-{
-     color: #4B0082;
-     font-size: 18.5px;
+.card-header {
+    padding-top: 5%;
 }
 
-#developer-version{
-    color: #4B0082;
-    font-size: 18.5px;
+h2.justPurple {
+    font-size: 32px;
+    border-bottom: 2px solid #f5f5f5;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 15px;
-}
-
-.purpleText {
-    font-size: 40px;
+h2#featureText {
     text-align: center;
 }
 
-#feature {
-    font-size: 35px;
-    text-align: center;
-}
-
-#featureDiv ul {
-  font-size: 15px;
-  list-style-type: none;
-  text-align: center;
+#body {
+    background-color: #f5f5f5;
 }
 
 .container {
+    background-color: #eee;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-
 .header {
     padding-bottom: 1rem;
     border-bottom: .05rem solid #e5e5e5;
 }
 
+/*ul {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+}*/
 
-.marketing {
+ul.nav > li > a:hover {
+    color: #4B0082;
+    float: left;
+    margin-left: .2rem;
+}
+
+.nav-pills .nav-item {
+    border-radius: 7px;
+    box-shadow: 0px 0px 0px 1px #e5e5e5;
+}
+
+.float-xs-right {
+    float: right!important;
+}
+
+.jumbotron {
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #888888;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#seeduxLogo {
+    color: #4B0082;
+    font-size: 50px;
+}
+
+.justPurple {
+    color: #4B0082;
+}
+
+li {
+    margin: 7px 0 7px 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+div.row.marketing {
+    top: 50%;
+    left: 50%;
+}
+
+/*.marketing {
     margin: 3rem 0;
+}*/
+
+#featureText {
+    font-size: 35px;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+#featureDiv ul {
+  font-size: 15px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
 }
 
 .footer {
     padding-top: 1.5rem;
     padding-left: 15px;
     color: #777;
-    border-top: .05rem solid #c4c4c4
 }
-
 
 /*Material design for code blocks*/
 pre {
-    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-
-

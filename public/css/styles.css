@@ -1,6 +1,31 @@
-.nav-pills .nav-item {
+
+
+#body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #e5e5e5;
+}
+
+ul.nav > li > a:hover {
+    color: #4B0082;
     float: left;
     margin-left: .2rem;
+}
+
+.nav-pills .nav-item {
+    border-radius: 7px;
+    box-shadow: 0px 0px 0px 1px #e5e5e5;
 }
 
 
@@ -8,19 +33,25 @@
     float: right!important;
 }
 
-
 .jumbotron{
-text-align: center;
-box-shadow: 2px 2px 2px 2px #888888;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #888888;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 #seeduxLogo {
     color: #4B0082;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .justPurple {
     color: #4B0082;
+}
+
+h2.justPurple {
+    font-size: 32px;
+    border-bottom: 2px solid #f5f5f5;
+
 }
 
 #npm-module-recommended-{
@@ -37,13 +68,18 @@ p {
     font-size: 15px;
 }
 
-.purpleText {
-    font-size: 40px;
+li {
+    margin: 7px 0 7px 0;
+}
+
+#featureText {
+    font-size: 35px;
     text-align: center;
+    border-bottom: 2px solid #f5f5f5;
 }
 
 #feature {
-    font-size: 35px;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -53,20 +89,6 @@ p {
   text-align: center;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-.header {
-    padding-bottom: 1rem;
-    border-bottom: .05rem solid #e5e5e5;
-}
-
-
 .marketing {
     margin: 3rem 0;
 }
@@ -75,13 +97,11 @@ p {
     padding-top: 1.5rem;
     padding-left: 15px;
     color: #777;
-    border-top: .05rem solid #c4c4c4
-}
-
+/*    border-top: .05rem solid #c4c4c4
+*/}
 
 /*Material design for code blocks*/
 pre {
-    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-
-

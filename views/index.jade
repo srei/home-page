@@ -1,6 +1,6 @@
 html
   include layout/includes.jade
-  body
+  body#body
     div.container
       div.header.clearfix
         nav
@@ -16,7 +16,7 @@ html
         div.seeduxLogo#seeduxLogo SEEDUX
         p.justPurple React-redux dev tool for the Chrome Browser
       div.row.marketing
-        div.purpleText.justPurple Features
+        div#featureText.justPurple Features
         div#featureDiv.justPurple !{readme[0].sectionContent}
       div.row
         div.col-lg-6
@@ -31,11 +31,14 @@ html
           h2.justPurple Getting Started
           div
           !{readme[2].sectionContent}
-    footer.footer
-          div Authors
-          a(href="https://github.com/mlampedx", target="_blank").justPurple  Michael Lampe /
-          = '\n'
-          a(href="https://github.com/bartlett705", target="_blank").justPurple Ahmad Kanawi /
-          = '\n'
-          a(href="https://github.com/srei", target="_blank").justPurple Stephenie Reimer
+  footer.footer
+    div Authors
+      div
+      a(href="https://github.com/mlampedx", target="_blank").justPurple  Michael Lampe /
+      = '\n'
+      a(href="https://github.com/bartlett705", target="_blank").justPurple Ahmad Kanawi /
+      = '\n'
+      a(href="https://github.com/srei", target="_blank").justPurple Stephenie Reimer
+      div#fork
+
 

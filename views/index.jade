@@ -11,10 +11,13 @@ html
               a.nav-link.justPurple(href="https://github.com/reduxify/seedux", target="_blank") Github Repo
             li.nav-item
               a.nav-link.justPurple(href="https://github.com/reduxify/seedux/issues", target="_blank") Issue Page
+              script.
+                $('a').click(function(){
+                  $(this).addClass("visted")
+                });
       div.jumbotron.lightpurple
         img(src="/duck")
-        div.seeduxLogo#seeduxLogo SEEDUX
-        p.justPurple React-redux dev tool for the Chrome Browser
+        p#description.justPurple React-redux dev tool for the Chrome Browser
       div.row.marketing
         h2#featureText.justPurple Features
         div#featureDiv.justPurple

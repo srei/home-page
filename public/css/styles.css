@@ -40,18 +40,17 @@ h2#featureText {
     border-bottom: .05rem solid #e5e5e5;
 }
 
-/*ul {
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20%;
-}*/
+a.nav-link.justPurple {
+    box-shadow: 1px 1px 1px 0px #888888;
+}
 
-ul.nav > li > a:hover {
+a.nav-link.justPurple.visted{
+    color: #4B0082;
+}
+
+ul.nav > li a:hover{
     color: #4B0082;
     float: left;
-    margin-left: .2rem;
 }
 
 .nav-pills .nav-item {
@@ -65,9 +64,23 @@ ul.nav > li > a:hover {
 
 .jumbotron {
     text-align: center;
-    box-shadow: 1px 1px 1px 1px #888888;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    /*box-shadow: 1px 4px px 3px #888888;*/
+    border: .5px solid #888888;
 }
+
+
+img {
+    box-shadow: 1px 1px 3px 1px;
+    height: 22%;
+}
+
+#description {
+    margin: 0 0 0 0;
+    padding: 13px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
 
 #seeduxLogo {
     color: #4B0082;
@@ -91,10 +104,6 @@ div.row.marketing {
     left: 50%;
 }
 
-/*.marketing {
-    margin: 3rem 0;
-}*/
-
 #featureText {
     font-size: 35px;
     border-bottom: 2px solid #f5f5f5;
@@ -102,12 +111,13 @@ div.row.marketing {
 
 #featureDiv ul {
   font-size: 15px;
-  list-style-type: none;
+  /*list-style-type: none;*/
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20%;
+  padding-right: 20%;
 }
 
 .footer {

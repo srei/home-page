@@ -1,5 +1,6 @@
 div.row h3 {
     color: #4B0082;
+    color: ;
     font-size: 20px;
 }
 
@@ -23,16 +24,20 @@ h2#featureText {
     text-align: center;
 }
 
+code.lang-javascript {
+    color: #30215C;
+}
+
 #body {
     background-color: #f5f5f5;
 }
 
 .container {
-    background-color: #eee;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #eee;
 }
 
 .header {
@@ -41,7 +46,7 @@ h2#featureText {
 }
 
 a.nav-link.justPurple {
-    box-shadow: 1px 1px 1px 0px #888888;
+
 }
 
 a.nav-link.justPurple.visted{
@@ -49,13 +54,13 @@ a.nav-link.justPurple.visted{
 }
 
 ul.nav > li a:hover{
-    color: #4B0082;
+    color: #30215C;
     float: left;
 }
 
 .nav-pills .nav-item {
     border-radius: 7px;
-    box-shadow: 0px 0px 0px 1px #e5e5e5;
+    font-size: 20px;
 }
 
 .float-xs-right {
@@ -64,7 +69,7 @@ ul.nav > li a:hover{
 
 .jumbotron {
     text-align: center;
-    /*box-shadow: 1px 4px px 3px #888888;*/
+    box-shadow: 1px 4px 3px #888888;
     border: .5px solid #888888;
 }
 
@@ -97,6 +102,7 @@ li {
 
 p {
     font-size: 15px;
+    color: #1B0A33;
 }
 
 div.row.marketing {

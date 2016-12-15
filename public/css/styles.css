@@ -69,14 +69,14 @@ ul.nav > li a:hover{
 
 .jumbotron {
     text-align: center;
-    box-shadow: 1px 4px 3px #888888;
-    border: .5px solid #888888;
+    box-shadow: 1px 1px 2px 2px #888888;
+    /*border: .5px solid #888888;*/
 }
 
 
 img {
     box-shadow: 1px 1px 3px 1px;
-    height: 22%;
+    height: 35%;
 }
 
 #description {

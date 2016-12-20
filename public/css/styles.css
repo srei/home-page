@@ -12,8 +12,8 @@ div.row.marking {
     padding-top: 5%;
 }
 
-.jumbotron h1{
-
+.jumbotron h1.seeduxHeading{
+    color: #4B0082 ;
 }
 h2.justPurple {
     font-size: 32px;
@@ -47,9 +47,6 @@ code.lang-javascript {
     border-bottom: .05rem solid #e5e5e5;
 }
 
-a.nav-link.justPurple {
-
-}
 
 a.nav-link.justPurple.visted{
     color: #4B0082;
@@ -75,9 +72,7 @@ ul.nav > li a:hover{
     /*border: .5px solid #888888;*/
 }
 
-
 img {
-    box-shadow: 1px 1px 3px 1px;
     height: 35%;
 }
 

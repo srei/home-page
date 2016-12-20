@@ -1,5 +1,5 @@
 div.row h3 {
-    color: #4B0082;
+    color: #6E89FF;
     font-size: 20px;
 }
 
@@ -12,12 +12,8 @@ div.row.marking {
     padding-top: 5%;
 }
 
-.jumbotron h1.seeduxHeading{
-    color: #4B0082 ;
-}
 h2.justPurple {
     font-size: 32px;
-    /*border-bottom: 2px solid #f5f5f5;*/
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -30,8 +26,9 @@ code.lang-javascript {
     color: #30215C;
 }
 
+/*sides beyond container*/
 #body {
-    background-color: #f5f5f5;
+    background-color: #050A24;
 }
 
 .container {
@@ -39,21 +36,24 @@ code.lang-javascript {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #eee;
+    background-color: #050A24;
+    border-right: 2px orange solid;
+    border-left: 2px orange solid;
+
 }
+
 
 .header {
     padding-bottom: 1rem;
-    border-bottom: .05rem solid #e5e5e5;
+    /*border-bottom: .05rem solid #e5e5e5;*/
 }
 
-
 a.nav-link.justPurple.visted{
-    color: #4B0082;
+    color: #6E89FF;
 }
 
 ul.nav > li a:hover{
-    color: #30215C;
+    /*color: #6E89FF;*/
     float: left;
 }
 
@@ -66,13 +66,19 @@ ul.nav > li a:hover{
     float: right!important;
 }
 
+.container .jumbotron {
+    background-color: #050A24;
+}
 .jumbotron {
     text-align: center;
-    box-shadow: 1px 1px 2px 2px #888888;
+    /*box-shadow: 1px 1px 2px 2px #888888;*/
     /*border: .5px solid #888888;*/
+    /*background-color: #050A24;*/
 }
 
+
 img {
+    box-shadow: 1px 1px 3px 1px;
     height: 35%;
 }
 
@@ -85,21 +91,24 @@ img {
 
 
 #seeduxLogo {
-    color: #4B0082;
+    color: #6E89FF;
     font-size: 50px;
 }
 
 .justPurple {
-    color: #4B0082;
+    color: #6E89FF;
 }
 
 li {
     margin: 7px 0 7px 0;
+    font-weight: lighter;
 }
 
 p {
     font-size: 20px;
-    color: #1B0A33;
+    color: #6E89FF;
+    font-weight: lighter;
+    font-
 }
 
 div.row.marketing {
@@ -125,7 +134,7 @@ div.row.marketing {
 .footer {
     padding-top: 1.5rem;
     padding-left: 15px;
-    color: #777;
+    color: #6E89FF;
     font-size:20px;
 }
 

@@ -72,8 +72,14 @@ ul.nav > li a:hover{
     /*border: .5px solid #888888;*/
 }
 
-img {
+img.duck {
     height: 25em;
+}
+
+img{
+    vertical-align: middle;
+    padding: 2%;
+    width: 40%;
 }
 
 #description {

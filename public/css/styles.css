@@ -42,6 +42,11 @@ code.lang-javascript {
     background-color: #eee;
 }
 
+.container .jumbotron {
+    height: 40em;
+    width: 81em;
+}
+
 .header {
     padding-bottom: 1rem;
     border-bottom: .05rem solid #e5e5e5;

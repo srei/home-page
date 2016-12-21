@@ -56,6 +56,15 @@ fetch('https://raw.githubusercontent.com/reduxify/seedux/master/README.md')
 app.get('/duck', (req,res, next) => {
 	res.sendFile(__dirname + '/icons/seedux.svg');
 });
+app.get('/screen1', (req,res, next) => {
+	res.sendFile(__dirname + '/icons/screen1.png');
+});
+app.get('/screen2', (req,res, next) => {
+	res.sendFile(__dirname + '/icons/screen2.png');
+});
+app.get('/screen3', (req,res, next) => {
+	res.sendFile(__dirname + '/icons/screen3.png');
+});
 
 const PORT = 3000;
 

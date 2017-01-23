@@ -139,6 +139,8 @@ div.row.marketing {
     font-size: 14px;
 }
 
+/* WIDE DESKTOP LAYOUT 
+----------------------------------------------- */
 @media only screen and (min-width: 1176px) {
 
 body { width: 1080px; }

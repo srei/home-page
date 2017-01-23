@@ -139,7 +139,9 @@ div.row.marking {
 ----------------------------------------------- */
 @media only screen and (min-width: 1176px) {
 
-body { width: 1080px; }
+body { 
+    width: 1080px; 
+}
 
 }
 

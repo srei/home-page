@@ -1,3 +1,96 @@
+
+/* GENERAL STYLES
+----------------------------------------------- */
+body {
+    background: #FFF;
+    width: 896px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+img { 
+	max-width: 60%; 
+}
+
+li {
+    margin: 1% 0 1% 0;
+}
+
+.jumbotron p {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h1 {
+    max-width: 100%;
+}
+
+h2.justPurple {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2#featureText {
+    text-align: center;
+    font-size: 40px;
+}
+
+code.lang-javascript {
+    color: #30215C;
+}
+
+pre {
+    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.justPurple {
+    color: #4B0082;
+}
+
+/* ----- MAIN NAVIGATION ----- */
+
+.nav-pills .nav-item {
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.float-xs-right {
+    float: right;
+}
+
+/* ----- LINKS ----- */
+
+a.nav-link.justPurple.visited{
+    color: #4B0082;
+}
+
+ul.nav > li a:hover{
+    color: #30215C;
+    float: left;
+}
+
+/* ----- PAGE STRUCTURE ----- */
+.container {
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+/* ----- JUMBOTRON ----- */
+
+div.jumbotron {
+    width: 98%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px 2px #888888;
+}
+div.innerjumbo {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* ----- ROW ----- */
+
 div.row h3 {
     color: #4B0082;
     font-size: 20px;
@@ -8,130 +101,36 @@ div.row.marking {
     margin: 2%;
 }
 
-.card-header {
-    padding-top: 5%;
-}
-
-.jumbotron h1.seeduxHeading{
-    color: #4B0082 ;
-}
-h2.justPurple {
-    font-size: 32px;
-    /*border-bottom: 2px solid #f5f5f5;*/
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-h2#featureText {
-    text-align: center;
-}
-
-code.lang-javascript {
-    color: #30215C;
-}
-
-#body {
-    background-color: #f5f5f5;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #eee;
-}
-
-.container .jumbotron {
-    height: 40em;
-    width: 81em;
-}
-
-.header {
-    padding-bottom: 1rem;
-    border-bottom: .05rem solid #e5e5e5;
-}
-
-
-a.nav-link.justPurple.visted{
-    color: #4B0082;
-}
-
-ul.nav > li a:hover{
-    color: #30215C;
-    float: left;
-}
-
-.nav-pills .nav-item {
-    border-radius: 7px;
-    font-size: 20px;
-}
-
-.float-xs-right {
-    float: right!important;
-}
-
-.jumbotron {
-    text-align: center;
-    box-shadow: 1px 1px 2px 2px #888888;
-    /*border: .5px solid #888888;*/
-}
-
-img.duck {
-    height: 25em;
-}
-
-img{
-    vertical-align: middle;
-    padding: 2%;
-    width: 40%;
-}
-
-#description {
-    margin: 0 0 0 0;
-    padding: 13px;
-    font-size: 30px;
-    font-weight: lighter;
-}
-
-
-#seeduxLogo {
-    color: #4B0082;
-    font-size: 50px;
-}
-
-.justPurple {
-    color: #4B0082;
-}
-
-li {
-    margin: 7px 0 7px 0;
-}
-
-p {
-    font-size: 16px;
-    color: #1B0A33;
-}
-
 div.row.marketing {
     top: 50%;
     left: 50%;
 }
 
-#featureText {
-    font-size: 40px;
+.col-lg-6 {
+    padding-top: 5%;
+    padding-bottom: 3%
 }
 
 #featureDiv ul {
   font-size: 18px;
   list-style-type: square;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20%;
   padding-right: 20%;
 }
+
+/* --------------- HEADER ------------- */
+.header {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* FOOTER 
+----------------------------------------------- */
 
 .footer {
     padding-top: 1.5rem;
@@ -140,8 +139,42 @@ div.row.marketing {
     font-size: 14px;
 }
 
-/*Material design for code blocks*/
-pre {
-    box-shadow: 0 0px 15px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+@media only screen and (min-width: 1176px) {
+
+body { width: 1080px; }
+
+}
+
+
+/* TABLET LAYOUT 
+----------------------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+body {
+	width: 712px;
+	padding: 20px 28px 0;
+}
+
+}
+
+/* MOBILE LAYOUT (PORTRAIT/320PX) 
+----------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+body {
+	width: 320px;
+	padding: 0;
+}
+
+
+/* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
+----------------------------------------------- */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+body {
+	width: 480px;
+	padding: 0;
 }

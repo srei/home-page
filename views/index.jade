@@ -1,6 +1,6 @@
 html
   include layout/includes.jade
-  body#body
+  body
     div.container
       div.header.clearfix
         nav
@@ -13,26 +13,23 @@ html
               a.nav-link.justPurple(href="https://github.com/reduxify/seedux/issues", target="_blank") Contact
               script.
                 $('a').click(function(){
-                  $(this).addClass("visted")
+                  $(this).addClass("visited")
                 });
-      div.jumbotron
-        img.duck(src="/duck")
-        h1.seeduxHeading [SEEDUX]
-        p#description.justPurple React-Redux Developer Tool for the Chrome Browser
+      div.jumbotron.justPurple
+        div.innerjumbo
+          img(src="/duck")
+          h1.justPurple [SEEDUX]
+          p.justPurple React-Redux Developer Tool for the Chrome Browser
       div.row.marketing
         h2#featureText.justPurple Features
         div#featureDiv.justPurple
           !{readme[0].sectionContent}
       div.row
         div.col-lg-6
-          div.card
-          div.card-header(role="tab")#headingOne
           h2.justPurple How to Install
           div
           | !{readme[1].sectionContent}
         div.col-lg-6
-          div.card
-          div.card-header(role="tab")#headingTwo
           h2.justPurple Getting Started
           div
           | !{readme[2].sectionContent}
@@ -43,6 +40,6 @@ html
       a(href="https://github.com/bartlett705", target="_blank").justPurple Ahmad Kanawi /
       = '\n'
       a(href="https://github.com/srei", target="_blank").justPurple Stephenie Reimer
-      div#fork
+      div
 
 
